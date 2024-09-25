@@ -1,0 +1,212 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background-image: url(/images/green-flower.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HEADER - UP */
+#headerUp {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+#headerUp #logoHortus {
+  width: 200px;
+}
+
+#headerUp #logoConnect img {
+  width: 40px;
+}
+
+#logoConnect,
+#connectLogo {
+  filter: contrast(50%);
+  flex-wrap: wrap;
+}
+
+#headerUp #logoConnect ul,
+#headerDown ul {
+  width: 600px;
+}
+
+#headerUp #logoConnect ul,
+#headerDown ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#headerUp li,
+#headerDown li,
+#footer li {
+  list-style: none;
+}
+
+#headerUp a,
+#footer li {
+  color: darkslategrey;
+}
+
+#headerUp a,
+#headerDown li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#headerUp a:hover,
+#footerDiv li a:hover {
+  color: #ff6600;
+}
+
+#headerUp a:active,
+#footerDiv li a:active {
+  color: #ff6600;
+}
+
+/* HEADER - CENTER */
+#headerCenter {
+  text-align: center;
+  color: darkslategrey;
+  border: 0.2px solid rgb(204, 218, 218);
+  font-size: 25px;
+  padding: 30px 0px;
+  background-color: beige;
+}
+
+/* HEADER - DOWN */
+#headerDown,
+#headerDown ul {
+  width: 100%;
+}
+
+#headerDown {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+
+#headerDown li {
+  width: 150px;
+  background-color: #adcfcb;
+  padding: 15px;
+  border: 0.5px solid beige;
+  text-align: center;
+}
+
+#headerDown li a {
+  color: #046516;
+  font-weight: bold;
+}
+
+/* FORMULAIRE/INSCRIPTION */
+#connexion,
+#inscription {
+  text-align: center;
+  color: #046516;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 0px;
+}
+
+#form {
+  width: 700px;
+  margin: auto;
+  padding: 100px 0px;
+  border-radius: 5px;
+  background-color: #adcfcb;
+  color: white;
+  font-size: 20px;
+}
+
+#connexionDiv,
+#inscriptionDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+}
+
+#connexionDiv div,
+#inscriptionDiv div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#form input {
+  width: 400px;
+  height: 40px;
+}
+
+#form input {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#form #connexionButton,
+#form #inscriptionButton {
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  padding: 10px 0;
+  background-color: #046516;
+  color: beige;
+  font-size: 20px;
+}
+
+#form p {
+  width: 400px;
+  color: darkslategrey;
+  text-align: end;
+  font-style: italic;
+}
+
+#form p a {
+  color: darkslategrey;
+  font-size: 18px;
+}
+
+/* FOOTER */
+#footer {
+  padding: 90px 0 0 0;
+}
+
+#footer > hr {
+  border: 0.2px solid rgb(204, 218, 218);
+}
+
+#footerDiv {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  background-color: beige;
+  align-items: center;
+}
+
+#footerDiv div:nth-child(2) ul {
+  display: flex;
+}
+
+#footerDiv div:nth-child(2) ul li {
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+}
+
+#footerDiv li a {
+  color: darkslategrey;
+  text-decoration: none;
+}

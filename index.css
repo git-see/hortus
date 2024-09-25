@@ -1,0 +1,468 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background-image: url(/images/green-flower.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HEADER - UP */
+#headerUp {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+#headerUp #logoHortus {
+  width: 200px;
+}
+
+#headerUp #logoConnect img {
+  width: 40px;
+}
+
+#logoConnect,
+#connectLogo {
+  filter: contrast(50%);
+  flex-wrap: wrap;
+}
+
+#headerUp #logoConnect ul,
+#headerDown ul {
+  width: 600px;
+}
+
+#headerUp #logoConnect ul,
+#headerDown ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logoConnect li:nth-child(4) {
+  text-align: center;
+  color: #046516;
+}
+
+#headerUp li,
+#headerDown li,
+#footer li {
+  list-style: none;
+}
+
+#headerUp a,
+#footer li {
+  color: darkslategrey;
+}
+
+#headerUp a,
+#headerDown li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#headerUp a:hover,
+#footerDiv li a:hover {
+  color: #ff6600;
+}
+
+#headerUp a:active,
+#footerDiv li a:active {
+  color: #ff6600;
+}
+
+/* HEADER - CENTER */
+#headerCenter {
+  text-align: center;
+  color: darkslategrey;
+  border: 0.2px solid rgb(204, 218, 218);
+  font-size: 25px;
+  padding: 30px 0px;
+  background-color: beige;
+}
+
+/* HEADER - DOWN */
+#headerDown,
+#headerDown ul {
+  width: 100%;
+}
+#headerDown {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+
+#headerDown li {
+  width: 150px;
+  background-color: #adcfcb;
+  padding: 15px;
+  border: 0.5px solid beige;
+  text-align: center;
+}
+
+#headerDown li a {
+  color: #046516;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  top: -1px;
+  right: 1em;
+  visibility: hidden;
+  width: 130px;
+  background-color: darkslategrey;
+  color: beige;
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/******* AGIR *******/
+/* QUI SOMMES-NOUS **/
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.content h1,
+.content #qui,
+.content #partenaires {
+  text-align: center;
+  line-height: 80px;
+  color: #046516;
+  font-size: 40px;
+  padding: 40px 0 60px 0;
+}
+
+.content h2 {
+  text-align: center;
+  color: darkslategrey;
+  font-size: 30px;
+  padding: 40px 0 60px 0;
+}
+
+.content p {
+  color: darkslategrey;
+  font-size: 20px;
+  padding: 0 0 60px 0;
+}
+
+#references p {
+  font-size: 10px;
+  font-style: italic;
+}
+
+/* PARTENAIRES */
+.content #partenairesDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.content .partenaire {
+  width: 150px;
+}
+
+.content .partenaire img {
+  width: 150px;
+}
+
+/******* AJOUTER UNE ASTUCE *******/
+#butBtn {
+  display: flex;
+  justify-content: end;
+}
+
+#ajouterAstuce {
+  background-color: #046516;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+}
+
+#ajouterAstuce a {
+  text-decoration: none;
+  color: beige;
+}
+
+#ajouterAstuce:hover {
+  background-color: #ff6600;
+}
+
+#domaine {
+  text-align: center;
+  color: #046516;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 0px;
+}
+
+#fiche {
+  width: 700px;
+  margin: auto;
+  padding: 40px 0 1px 0;
+  border: 0.5px solid rgb(204, 218, 218);
+  border-radius: 5px;
+  background-color: beige;
+  color: darkslategrey;
+  font-size: 20px;
+}
+
+.fiche {
+  margin-bottom: 50px;
+}
+
+.fiche h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.fiche p {
+  filter: contrast(50%);
+  padding: 0 30px;
+  text-align: justify;
+}
+
+.fiche:nth-child(3) p {
+  font-size: 12px;
+  text-align: end;
+}
+
+/******* FORMULAIRE *******/
+#form {
+  width: 700px;
+  margin: auto;
+  padding: 100px 0px;
+  border-radius: 5px;
+  background-color: #adcfcb;
+  color: white;
+  font-size: 20px;
+}
+
+#formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+}
+
+#formDiv div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#form input,
+#form select {
+  width: 400px;
+  height: 40px;
+}
+
+#form textarea {
+  width: 400px;
+  height: 200px;
+}
+
+#form input,
+#form textarea,
+#form select {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#form select {
+  color: #046516;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#form #domaineButton {
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  padding: 10px 0;
+  background-color: #046516;
+  color: beige;
+  font-size: 20px;
+}
+
+/* FOOTER */
+#footer {
+  padding: 90px 0 0 0;
+}
+
+#footer > hr {
+  border: 0.2px solid rgb(204, 218, 218);
+}
+
+#footerDiv {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  background-color: beige;
+  align-items: center;
+}
+
+#footerDiv div:nth-child(2) ul {
+  display: flex;
+}
+
+#footerDiv div:nth-child(2) ul li {
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+}
+
+#footerDiv li a {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* POPUP */
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+#textRgpd {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: end;
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+#divRgpd {
+  color: darkslategrey;
+  line-height: 40px;
+}
+
+#divRgpd h2 {
+  text-align: center;
+}
+
+.popup {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: auto 5%;
+  }
+
+  .popup-inner {
+    position: relative;
+    padding: 1em;
+  }
+  .s3-btn-close {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    width: 40px;
+    font-size: 30px;
+    background: black;
+    border: solid 2px white;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
+  }
+}
+
+/***************************
+* Responsive - break point : 850px
+****************************/
+@media screen and (max-width: 850px) {
+  /* HEADER - UP */
+  #headerUp {
+    margin-bottom: 80px;
+  }
+
+  #headerUp #logoConnect nav ul {
+    display: block;
+    align-items: end;
+    text-align: end;
+    padding-right: 40px;
+    line-height: 40px;
+  }
+
+  #headerUp #logoConnect nav ul h4 {
+    display: none;
+  }
+
+  #headerUp #logoConnect ul,
+  #headerDown ul {
+    width: 100%;
+  }
+
+  #logoConnect li:nth-child(4) {
+    text-align: end;
+  }
+
+  #headerDown {
+    margin-bottom: 90px;
+  }
+
+  #headerDown nav ul {
+    flex-wrap: wrap;
+  }
+
+  /***************************
+* Responsive - Fiches: 700px=>75%
+****************************/
+  #fiche {
+    width: 75%;
+  }
+
+  /***************************
+* Responsive - break point : 580px
+****************************/
+  @media screen and (max-width: 580px) {
+    /* Replace "Qui sommes-nous" by "Hortus" */
+    #logoConnect li:nth-child(2) a {
+      font-size: 0;
+    }
+
+    #logoConnect li:nth-child(2) a:after {
+      font-size: 20px;
+      content: "Hortus";
+    }
+  }
+}
